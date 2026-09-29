@@ -1,0 +1,114 @@
+/* Gerado por automacao/gerar_tokens.py a partir de project/tokens.json. Não edite à mão. */
+
+:root, [data-theme="creme"] {
+  --creme: #f9f7ef;
+  --musgo: #3f5442;
+  --floresta: #212d23;
+  --salvia: #939d90;
+  --creme-200: #eeede5;
+  --creme-300: #e3e3da;
+  --floresta-200: #2c3b2e;
+  --musgo-200: #4e6150;
+  --fundo: var(--creme);
+  --fundo-alt: var(--creme-200);
+  --texto: var(--floresta);
+  --texto-suave: #626a60;
+  --fio: #d6d7ce;
+  --destaque: var(--musgo);
+  --acao: var(--floresta);
+  --acao-texto: var(--creme);
+  --caixa: var(--musgo);
+  --caixa-texto: var(--creme);
+  --veu: rgba(33, 45, 35, 0.62);
+}
+
+[data-theme="floresta"] {
+  --fundo: var(--floresta);
+  --fundo-alt: var(--floresta-200);
+  --texto: var(--creme);
+  --texto-suave: #b8bab2;
+  --fio: #485148;
+  --destaque: var(--salvia);
+  --acao: var(--creme);
+  --acao-texto: var(--floresta);
+  --caixa: var(--musgo);
+}
+
+[data-theme="musgo"] {
+  --fundo: var(--musgo);
+  --fundo-alt: var(--musgo-200);
+  --texto: var(--creme);
+  --texto-suave: #d0d3c9;
+  --fio: #6e7d6d;
+  --destaque: var(--creme);
+  --acao: var(--creme);
+  --acao-texto: var(--musgo);
+  --caixa: var(--floresta);
+}
+
+:root {
+  --espaco-1: 4px;
+  --espaco-2: 8px;
+  --espaco-3: 12px;
+  --espaco-4: 16px;
+  --espaco-5: 24px;
+  --espaco-6: 32px;
+  --espaco-7: 48px;
+  --espaco-8: 64px;
+  --espaco-9: 96px;
+  --espaco-10: 144px;
+  --raio-reto: 0px;
+  --raio-ponto: 9999px;
+  --fio-web: 1px;
+  --fio-post: 2px;
+  --opacidade-marca-dagua: 0.14;
+  --opacidade-grafismo: 0.35;
+  --duracao-ui: 200ms;
+  --duracao-entrada: 700ms;
+  --duracao-linha: 1600ms;
+  --duracao-corte: 600ms;
+  --curva-suave: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --curva-lenta: cubic-bezier(0.65, 0, 0.35, 1);
+  --font-display: "brandon-grotesque", "Jost", "Futura", "Century Gothic", sans-serif;
+  --font-texto: "mozaic-hum-variable", "mozaic-hum", "Figtree", "Avenir Next", system-ui, sans-serif;
+}
+
+.caixa-alta-xl { font-family: var(--font-display); font-size: 56px; line-height: 64px; font-weight: 300; letter-spacing: 0.28em; text-transform: uppercase; }
+
+.caixa-alta { font-family: var(--font-display); font-size: 28px; line-height: 36px; font-weight: 300; letter-spacing: 0.28em; text-transform: uppercase; }
+
+.titulo-1 { font-family: var(--font-display); font-size: 56px; line-height: 64px; font-weight: 300; letter-spacing: 0; }
+
+.titulo-2 { font-family: var(--font-display); font-size: 40px; line-height: 48px; font-weight: 300; letter-spacing: 0; }
+
+.titulo-3 { font-family: var(--font-display); font-size: 28px; line-height: 36px; font-weight: 300; letter-spacing: 0; }
+
+.sobretitulo { font-family: var(--font-display); font-size: 12px; line-height: 16px; font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; }
+
+.lead { font-family: var(--font-texto); font-size: 20px; line-height: 32px; font-weight: 300; }
+
+.corpo { font-family: var(--font-texto); font-size: 17px; line-height: 28px; font-weight: 400; }
+
+.corpo-p { font-family: var(--font-texto); font-size: 15px; line-height: 24px; font-weight: 400; }
+
+.legenda { font-family: var(--font-texto); font-size: 13px; line-height: 20px; font-weight: 400; }
+
+.rotulo { font-family: var(--font-texto); font-size: 13px; line-height: 16px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; }
+
+.post-titulo { font-family: var(--font-display); font-size: 76px; line-height: 86px; font-weight: 300; }
+
+.post-caixa-alta { font-family: var(--font-display); font-size: 72px; line-height: 84px; font-weight: 300; letter-spacing: 0.26em; text-transform: uppercase; }
+
+.post-texto { font-family: var(--font-texto); font-size: 34px; line-height: 46px; font-weight: 300; }
+
+.post-apoio { font-family: var(--font-texto); font-size: 26px; line-height: 36px; font-weight: 400; }
+
+.post-sobretitulo { font-family: var(--font-display); font-size: 22px; line-height: 28px; font-weight: 400; letter-spacing: 0.34em; text-transform: uppercase; }
+
+.video-legenda { font-family: var(--font-texto); font-size: 54px; line-height: 68px; font-weight: 500; }
+
+.video-titulo { font-family: var(--font-display); font-size: 88px; line-height: 100px; font-weight: 300; letter-spacing: 0.24em; text-transform: uppercase; }
+
+.video-nome { font-family: var(--font-display); font-size: 40px; line-height: 48px; font-weight: 300; letter-spacing: 0.26em; text-transform: uppercase; }
+
+.video-capitulo { font-family: var(--font-display); font-size: 30px; line-height: 36px; font-weight: 400; letter-spacing: 0.34em; text-transform: uppercase; }
