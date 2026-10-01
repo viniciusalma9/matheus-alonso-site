@@ -142,7 +142,7 @@
   /* ---------- telas de acesso ---------- */
   const FOTOS_LOGIN = [
     ['casa-de-campo/varanda', 'Uma casa que recebe antes mesmo da porta, e que convida a ficar.', 'Casa de Campo'],
-    ['waldemar/gourmet', 'Arquitetura não é apenas construir espaços. É sobre a forma como eles serão vividos.', 'Waldemar'],
+    ['casa-varanda/gourmet', 'Arquitetura não é apenas construir espaços. É sobre a forma como eles serão vividos.', 'Casa Varanda'],
     ['casa-de-campo/circulacao', 'Cada detalhe começa no planejamento.', 'Casa de Campo'],
   ];
   function moldeAcesso(miolo) {

@@ -45,7 +45,7 @@
     arq(1, 'renders', 'Render - circulação.jpg', 4.2e6, 20, 'Anteprojeto aprovado', I('casa-de-campo/circulacao')), arq(1, 'renders', 'Render - suíte.jpg', 4.9e6, 20, 'Anteprojeto aprovado', I('casa-de-campo/suite')),
     arq(1, 'documentos', 'Contrato de prestação de serviços.pdf', 0.4e6, 40, 'Assinado'), arq(1, 'documentos', 'Memorial descritivo.pdf', 0.9e6, 6), arq(1, 'documentos', 'RRT.pdf', 0.2e6, 38),
     arq(1, 'materiais', 'Caderno de acabamentos.pdf', 7.2e6, 6, 'Para orçamento'),
-    arq(2, 'renders', 'Referência - espaço gourmet.jpg', 3.9e6, 2, 'Estudo preliminar', I('waldemar/gourmet')), arq(2, 'plantas', 'Estudo preliminar.pdf', 1.6e6, 2),
+    arq(2, 'renders', 'Referência - espaço gourmet.jpg', 3.9e6, 2, 'Estudo preliminar', I('casa-varanda/gourmet')), arq(2, 'plantas', 'Estudo preliminar.pdf', 1.6e6, 2),
   );
   db.projetos[0].capa_id = db.arquivos.find((a) => a.nome === 'Render - chegada.jpg').id;
   db.projetos[1].capa_id = db.arquivos.find((a) => a.projeto_id === 2 && a.imagem).id;

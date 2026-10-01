@@ -27,7 +27,7 @@
   const cab = (eyebrow, titulo, acoes = '') => `<header class="pt-main-cab"><div><p class="eyebrow">${eyebrow}</p><h1>${titulo}</h1></div><div class="row" style="gap:12px">${acoes}</div></header>`;
   const selectOpts = (obj, sel) => Object.entries(obj).map(([k, v]) => `<option value="${esc(k)}"${String(k) === String(sel) ? ' selected' : ''}>${esc(v)}</option>`).join('');
   const etapasObj = () => Object.fromEntries(S.etapas.map((e) => [e.n, `${e.n}. ${e.nome}`]));
-  const TIPOS = ['Residencial', 'Interiores', 'Reforma', 'Comercial', 'Institucional', 'Saúde'];
+  const TIPOS = ['Residencial', 'Comercial', 'Corporativo', 'Espaços de saúde', 'Interiores', 'Paisagismo', 'Reforma'];
 
   /* ---------- link de acesso ---------- */
   function mostrarConvite(cliente, link, novo) {

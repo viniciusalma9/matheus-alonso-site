@@ -21,7 +21,7 @@
   $$('.linhas').forEach((l) => $$('.ln > span', l).forEach((s, i) => s.style.getPropertyValue('--i') || s.style.setProperty('--i', i)));
 
   /* ---------- revelação ao rolar ---------- */
-  const REVEAL = '.rv, .rv-cortina, .linhas, .tracking-in, [data-stagger], .lm.draw, .foot-mark';
+  const REVEAL = '.rv, .rv-cortina, .linhas, .tracking-in, [data-stagger], .lm.draw';
   const io = new IntersectionObserver((es) => es.forEach((en) => {
     if (!en.isIntersecting) return;
     en.target.classList.add('visible'); io.unobserve(en.target);
@@ -108,6 +108,22 @@
     });
   }
 
+  /* ---------- capa da página inicial: renders em sequência ---------- */
+  const capas = $('[data-capas]');
+  if (capas && !reduced) {
+    const fotos = $$('.capa', capas), links = $$('.capa-link');
+    let atual = 0;
+    setInterval(() => {
+      if (document.hidden) return;
+      const prox = (atual + 1) % fotos.length;
+      [[fotos, false], [links, true]].forEach(([lista, link]) => {
+        lista[atual]?.classList.remove('on'); lista[prox]?.classList.add('on');
+        if (link && lista[prox]) { lista[atual].setAttribute('tabindex', '-1'); lista[atual].setAttribute('aria-hidden', 'true'); lista[prox].removeAttribute('tabindex'); lista[prox].removeAttribute('aria-hidden'); }
+      });
+      atual = prox;
+    }, 6500);
+  }
+
   /* ---------- filtro de projetos ---------- */
   const grade = $('[data-grade]');
   if (grade) {
@@ -116,7 +132,7 @@
       const f = b.dataset.filtrar;
       btns.forEach((x) => x.setAttribute('aria-pressed', x === b));
       let n = 0;
-      $$('.proj', grade).forEach((p) => { const ok = f === 'todos' || p.dataset.filtro === f; p.classList.toggle('is-oculto', !ok); if (ok) { n++; p.classList.add('visible'); } });
+      $$('.proj', grade).forEach((p) => { const ok = f === 'todos' || p.dataset.filtro.split(' ').includes(f); p.classList.toggle('is-oculto', !ok); if (ok) { n++; p.classList.add('visible'); } });
       vazio.hidden = n > 0;
     }));
   }
